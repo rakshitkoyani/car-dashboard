@@ -57,10 +57,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Register />} />
-<<<<<<< HEAD
-      <Route path="/" element={<Registration />} />
-=======
->>>>>>> origin
+      {/* <Route path="/" element={<Registration />} /> */}
       <Route path="/login" element={<Login />} />
       <Route path="/appraisals" element={<Appraisals />} />
     </Routes>
