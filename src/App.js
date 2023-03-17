@@ -5,10 +5,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Register from "./pages/Register";
-<<<<<<< HEAD
 import Registration from "./pages/Registration";
-=======
->>>>>>> origin
 import Login from "./pages/Login";
 import Appraisals from "./pages/Appraisals";
 import { useEffect } from "react";
