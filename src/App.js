@@ -5,6 +5,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Register from "./pages/Register";
+import Registration from "./pages/Registration";
 import Login from "./pages/Login";
 import Appraisals from "./pages/Appraisals";
 import { useEffect } from "react";
@@ -56,6 +57,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Register />} />
+      <Route path="/" element={<Registration />} />
       <Route path="/login" element={<Login />} />
       <Route path="/appraisals" element={<Appraisals />} />
     </Routes>

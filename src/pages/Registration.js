@@ -9,8 +9,6 @@ const initialValues = {
   email: "",
   password: "",
   confirm_password: "",
-  mobile_no:"",
-  state:"",
 };
 
 const Registration = () => {
@@ -40,9 +38,7 @@ const Registration = () => {
             <div className="modal-container">
               <div className="modal-left">
                 <h1 className="modal-title">Welcome!</h1>
-                <p className="modal-desc">
-                  To the thapa technical website for programmers.
-                </p>
+                
                 <form onSubmit={handleSubmit}>
                   <div className="input-block">
                     <label htmlFor="name" className="input-label">
@@ -116,40 +112,20 @@ const Registration = () => {
                       <p className="form-error">{errors.confirm_password}</p>
                     ) : null}
                   </div>
-                  <div className="input-block">
-                    <label htmlFor="mobile_no" className="input-label">
-                      Mobile Number
-                    </label>
-                    <input
-                      type="text"
-                      autoComplete="off"
-                      name="mobile_no"
-                      id="mobile_no"
-                      placeholder="Confirm Password"
-                      value={values.mobile_no}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                    />
-                    {errors.mobile_no && touched.mobile_no ? (
-                      <p className="form-error">{errors.mobile_no}</p>
-                    ) : null}
-                  </div>
                   <div className="modal-buttons">
+                    <a href="#" className="">
+                      Want to register using Gmail?
+                    </a>
                     <button className="input-button" type="submit">
-                      Create account
+                      Registration
                     </button>
                   </div>
                 </form>
                 <p className="sign-up">
-                  You have an account already? <a href="#">Sign in now</a>
+                  Already have an account? <a href="#">Sign In now</a>
                 </p>
               </div>
-              {/* <div className="modal-right">
-                <img
-                  src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dfd2ec5a01006fd8c4d7592a381d3776&auto=format&fit=crop&w=1000&q=80"
-                  alt=""
-                />
-              </div> */}
+              
             </div>
           </div>
         </div>
@@ -257,12 +233,11 @@ const Wrapper = styled.section`
     text-transform: uppercase;
     border: 0;
     color: #fff;
-    background: #EF5166;
-border-radius: 50px;
+    border-radius: 4px;
+    background: #8c7569;
     transition: 0.3s;
     cursor: pointer;
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: "Nunito", sans-serif;
   }
   .input-button:hover {
     background: #55311c;
